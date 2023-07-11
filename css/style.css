@@ -26,7 +26,7 @@ header .menu a {
 
 section .home {
     height: 600px;
-    background-image: radial-gradient(circle at 50.33% 53.73%, #303968 0, #1f2e5f 50%, #072356 100%);
+    /* background-image: radial-gradient(circle at 50.33% 53.73%, #303968 0, #1f2e5f 50%, #072356 100%); */
     background-image: url(/img/Proyecto\ nuevo.jpg);
     background-size: 100% 100%;
     display: flex;
@@ -178,7 +178,7 @@ section .portfolio .cartas {
 
 section .portfolio .cartas .card_info {
     height: 300px;
-    width: 250px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
