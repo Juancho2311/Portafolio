@@ -298,7 +298,7 @@ footer .final .two p {
 }
 
 
-@media(max-width: 700px) {
+@media(max-width: 720px) {
     header {
         /* position: fixed; */
         width: 100%;
@@ -312,10 +312,13 @@ footer .final .two p {
     .menu {
         margin-top: 10px;
     }
+    
 
     #home {
         text-align: center;
         width: 100%;
+        /* background-size: ; */
+
         display: flex;
         flex-direction: column;
         align-items: center;
