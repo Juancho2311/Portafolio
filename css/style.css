@@ -411,13 +411,13 @@ footer .final .two p {
         width: 100%;
     }
 
-    .portfolio .titulo_portfolio h1{
+    .portfolio .titulo_portfolio h1 {
         font-size: 30px;
 
     }
-    
-    .portfolio .cartas .card_info{
-        margin-bottom: 10px; 
+
+    .portfolio .cartas .card_info {
+        margin-bottom: 10px;
         margin-right: 10px;
     }
 
@@ -426,7 +426,7 @@ footer .final .two p {
         width: 100%;
         height: 400px;
         margin-top: 100px;
-        
+
     }
 
     #contac .info {
@@ -447,6 +447,35 @@ footer .final .two p {
         flex-direction: column;
         margin-left: 10px;
     }
+
+    section .contac .redes_contactos .linkedin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    section .contac .redes_contactos .Github {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    section .contac .redes_contactos .correo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    section .contac .redes_contactos .instagram {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
 }
 
 @media(max-width: 720px) {
@@ -575,13 +604,40 @@ footer .final .two p {
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        height: 100%;
     }
+
     #contac .redes_contactos img {
         height: 40px;
         width: 40px;
     }
 
+    section .contac .redes_contactos .linkedin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    section .contac .redes_contactos .Github {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    section .contac .redes_contactos .correo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    section .contac .redes_contactos .instagram {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+
 
 }
-
