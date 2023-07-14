@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: black;
     font-family: "Segoe UI";
 }
 
@@ -115,7 +114,8 @@ section .about .quien_soy {
 }
 
 section .about .skill {
-    height: 600px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,17 +134,17 @@ section .about .skill .lenguajes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
+    width: 100%;
     justify-content: space-around;
-    margin-left: 10px;
-    margin-bottom: 110px;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 section .about .skill .lenguajes .lenguaje {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-bottom: 10px;
 
 }
@@ -229,7 +229,7 @@ section .contac {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 10px;
 }
 
 
@@ -297,10 +297,153 @@ footer .final .two p {
     margin-top: -10px;
 }
 
+@media(max-width: 400px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 110px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+
+    #home {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home .informacion_personal {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    #home h2 {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    #home h1 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    #home p {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        height: 950px;
+        width: 100%;
+    }
+
+    #about .quien_soy {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    #about .quien_soy h4 {
+        font-size: 15px;
+        margin: 10px 0px 0px 5px;
+    }
+
+    #about .quien_soy h1 {
+        font-size: 23px;
+        margin: 0 0 0 5px;
+    }
+
+    #about .quien_soy h3 {
+        font-size: 14px;
+        margin: 10px 0 0 5px;
+    }
+
+    #about .quien_soy p {
+        font-size: 18px;
+        margin: 10px 0 0 5px;
+    }
+
+    #about .skill {
+        width: 100%;
+        height: 400px;
+        margin: 0;
+    }
+
+    .about .skill h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .skill .lenguajes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .about .skill .lenguajes .lenguaje {
+        margin: 0;
+    }
+
+    .portfolio .titulo_portfolio h1{
+        font-size: 30px;
+
+    }
+    
+    .portfolio .cartas .card_info{
+        margin-bottom: 10px; 
+        margin-right: 10px;
+    }
+
+
+    #contac {
+        width: 100%;
+        height: 400px;
+        margin-top: 100px;
+    }
+
+    #contac .info {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contac .info h1 {
+        margin: 0;
+    }
+
+    #contac .redes_contactos {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+            
+    }
+}
 
 @media(max-width: 720px) {
     header {
-        /* position: fixed; */
         width: 100%;
         height: 110px;
         display: flex;
@@ -309,25 +452,20 @@ footer .final .two p {
         align-items: center;
     }
 
+    header .logo img {
+        margin: 0;
+    }
+
     .menu {
         margin-top: 10px;
     }
-    
+
 
     #home {
         text-align: center;
         width: 100%;
-        /* background-size: ; */
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
-    #home .logo_perfil {
-        background-color: red;
-    }
 
     #home .informacion_personal {
         margin: 0;
@@ -381,7 +519,7 @@ footer .final .two p {
         margin-left: 6px;
     }
 
-    #about .skill{
+    #about .skill {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -395,8 +533,8 @@ footer .final .two p {
         justify-content: center;
         align-items: center;
     }
-    
-    #portfolio .cartas{
+
+    #portfolio .cartas {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -407,11 +545,10 @@ footer .final .two p {
     #contac {
         width: 100%;
         height: 400px;
-        /* background-color: red; */
         margin: 0;
     }
 
-    #contac .info{
+    #contac .info {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -419,13 +556,25 @@ footer .final .two p {
         align-items: center;
     }
 
-    #contac .info h1{
+    #contac .info h1 {
         margin: 0;
+        text-align: center;
     }
-    #contac .redes_contactos img{
+
+    #contac .redes_contactos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    #contac .redes_contactos img {
         height: 40px;
         width: 40px;
     }
 
 
 }
+
