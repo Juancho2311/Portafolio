@@ -161,6 +161,13 @@ section .portfolio {
     flex-direction: column;
 }
 
+section .portfolio {
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle at 50.33% 53.73%, #303968 0, #1f2e5f 50%, #072356 100%);
+    height: 500px;
+}
+
 section .portfolio .titulo_portfolio {
     display: flex;
     justify-content: center;
@@ -173,56 +180,73 @@ section .portfolio .titulo_portfolio {
 section .portfolio .cartas {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
 }
 
+
 section .portfolio .cartas .card_info {
-    height: 300px;
-    width: 400px;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: white;
     color: #072356;
     margin-left: 10px;
     margin-top: 10px;
-}
-
-section .portfolio .card_info .imagen {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
+    height: 250px;
+    width: 400px;
+    box-shadow: 0px 5px 25px black;
 }
 
 section .portfolio .card_info img {
-    width: 90%;
-    height: 180px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
 }
 
 section .portfolio .card_info .info {
-    width: 90%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(7, 35, 86,0.6);
+    color: wheat;
+    height: 100%;    
+    width: 100%;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
 }
 
 section .portfolio .card_info .info button {
-    margin-top: -10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    font-size: 20px;
     border: none;
-    width: 200px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
     background-color: #072356;
     color: white;
+    line-height: 1.5;
+    cursor: pointer;
 }
+
+section .portfolio .card_info:hover > .info{
+    opacity: 1;
+    visibility: visible;
+}
+section .portfolio .card_info:hover > .info{
+    opacity: 1;
+    visibility: visible;
+}
+section .portfolio .card_info:hover > .info h1{
+    margin-top: 20px;
+}
+
 
 section .contac {
     height: 400px;
